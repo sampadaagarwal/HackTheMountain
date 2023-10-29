@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images\homepg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a.nav-btn {
+    margin: 0 15px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #6B6B6B;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a.nav-btn:hover {
+    background-color: #4a4a4a;
+}
+
+.logo img{
+    height:250px;
+    width:auto;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6B6B6B;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    padding: 0 100px;
+    background-color: rgba(249, 232, 215, 0.6);
+}
+
+.info {
+    flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.blockquote {
+font-size: 24px;
+color: #333;
+font-style: italic;
+text-align: center;
+}
+p {
+    margin-bottom: 20px;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6B6B6B;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #4a4a4a;
+}
+
+.navbar .logo img {
+max-height: 50px;  /* Adjust as needed to fit your design */
+margin-right: 10px;
+}
+.button-help{
+    border-radius: 30px;
+    background-color: #e84393;
+    padding: 10px 24px;
+}
+.chatbot {
+position: fixed;
+bottom: 20px;  /* Adjust as needed */
+right: 20px;   /* Adjust as needed */
+z-index: 1000; /* To make sure it stays above other elements */
+cursor: pointer; /* To indicate it's clickable */
+}
+
+.chatbot img {
+width: 50px;   /* Adjust as needed */
+height: 50px;  /* Adjust as needed */
+}
+

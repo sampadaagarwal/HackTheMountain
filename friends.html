@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON to HTML</title>
+</head>
+<body>
+    <h1>Chat Messages</h1>
+    <ul id="message-list"></ul>
+</body>
+<script>
+    // Your JSON data
+    var jsonData = {
+        "users": {
+            "userID1": { "name": "User 1" },
+            "userID2": { "name": "User 2" }
+        },
+        "chats": {
+            "chatID1": {
+                "userID1": "userID1",
+                "userID2": "userID2",
+                "messages": [
+                    { "sender": "userID1", "message": "Hello" },
+                    { "sender": "userID2", "message": "Hi there" }
+                ]
+            }
+        }
+    };
+
+    // Function to display messages in the HTML
+    function displayMessages(chatID) {
+        var messageList = document.getElementById("message-list");
+        var chat = jsonData.chats[chatID];
+
+        chat.messages.forEach(function(message) {
+            var sender = jsonData.users[message.sender].name;
+            var listItem = document.createElement("li");
+            listItem.textContent = sender + ": " + message.message;
+            messageList.appendChild(listItem);
+        });
+    }
+
+    // Call the function to display messages from chatID1
+    displayMessages("chatID1");
+</script>
+
+</html>

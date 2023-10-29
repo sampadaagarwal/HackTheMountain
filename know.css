@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white; /* Sample color based on the image */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    color: rgb(25, 24, 24);
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between text and image */
+    align-items: flex-start; /* Aligns the top edge of the text and image */
+}
+
+.text-section {
+    flex: 1; /* This will make the text section take up half the width */
+    padding-right: 20px; /* Spacing between text and image */
+}
+
+.image-section {
+    padding:30px 50px;
+    flex: 1; /* This will make the image section take up half the width */
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%; /* Adjusts the image width */
+    display: block;
+}
+h2 {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.symptoms {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.symptom-block {
+    border-radius: 10px;
+    background-color:#C8AEFF; /* Adjust the color based on the image */
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    box-sizing: border-box;
+    max-width: calc(25% - 20px); /* For four blocks */
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+/* For responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .symptoms {
+        flex-direction: column;
+    }
+    .symptom-block {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

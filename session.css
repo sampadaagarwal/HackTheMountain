@@ -1,0 +1,172 @@
+body {
+    
+    background-image: linear-gradient(black, purple, pink);
+
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.sessions-container {
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    height:700px;
+    padding: 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #e84393;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    padding-left: 100px;
+    margin-left: 300px;
+    height:300px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container {
+    
+    height:300px;
+    width:300px;
+    flex: 1;
+    list-style-type: none;
+    padding: 20px 250px;
+}
+
+.featured-wrapper{
+    margin-left: 250px;
+    height:250px;
+    align-items: center;
+    background-color: white;
+    width: 50%;
+    max-width: 600px;
+    padding: 0px 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);   
+    position: relative;
+
+}
+
+
+.featured-card1 button{
+    align-self: center;
+    justify-content: center;
+    background-color: #f55fa7; 
+    margin-top:10px;
+    margin-left: 150px;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+
+    
+}
+.featured-card2 button{
+    align-self: center;
+    justify-content: center;
+    background-color: #f55fa7; 
+    margin-top:10px;
+    margin-left: 152px;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+
+    
+}
+.featured-card3 button{
+    align-self: center;
+    justify-content: center;
+    background-color: #f55fa7; 
+    margin-top:10px;
+    margin-left: 138px;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+
+    
+}
+.featured-card4 button{
+    align-self: center;
+    justify-content: center;
+    background-color: #f55fa7; 
+    margin-top:10px;
+    margin-left: 155px;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+
+    
+}
+.featured-card1 button:hover {
+    background-color: #8993E6;
+    color: white;
+}
+.featured-card2 button:hover {
+    background-color: #8993E6;
+    color: white;
+}
+.featured-card3 button:hover {
+    background-color: #8993E6;
+    color: white;
+}
+.featured-card4 button:hover {
+    background-color: #8993E6;
+    color: white;
+}
+
+.session-list li {
+    background-color: #e84393;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.sessions-page {
+    font-family: 'YourFontName', fallback-fonts, sans-serif;
+}
+
+@font-face {
+    font-family: 'YourFontName';
+    src: url('path-to-your-font.woff2') format('woff2'),
+         url('path-to-your-font.woff') format('woff');
+}
+/* Add your Font Awesome link in the head section of your HTML to load the icons */
+

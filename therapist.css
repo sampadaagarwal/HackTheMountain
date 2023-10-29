@@ -1,0 +1,47 @@
+html, body, h1 {
+    margin: 0;
+    padding: 0;
+ }
+
+
+.psychiatrist-container {
+    align-items: first baseline;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    gap: 20px;
+    padding: 0px;
+    background-color: #8993E6; /* You can change this to the color that matches your theme */
+}
+
+.psychiatrist-card {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.psychiatrist-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.psychiatrist-card p {
+    margin-bottom: 15px;
+}
+
+.view-more {
+    background-color: #8993E6; /* You can change this to the color that matches your theme */
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.view-more:hover {
+    background-color: #8993E6;
+}
